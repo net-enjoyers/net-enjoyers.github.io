@@ -1,0 +1,73 @@
+<!doctype html><html><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge"><title>Link collection: 1 - A link collection by Net-Enjoyers</title><meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Mateusz Efficiently Generating a Number in a Range You never thought about your random number generator. It just worked and you never noticed it to be off - except maybe for it&rsquo;s slow performance. Meanwhile this posts proves that there are people that are thinking about this like it&rsquo;s the basis of computing. Going over every little detail from correctness (!) and speed, and still one upping each-other on their implementation.">
+<meta property="og:image" content>
+<meta property="og:title" content="Link collection: 1">
+<meta property="og:description" content="Mateusz Efficiently Generating a Number in a Range You never thought about your random number generator. It just worked and you never noticed it to be off - except maybe for it&rsquo;s slow performance. Meanwhile this posts proves that there are people that are thinking about this like it&rsquo;s the basis of computing. Going over every little detail from correctness (!) and speed, and still one upping each-other on their implementation.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://net-enjoyers.github.io/posts/first/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2022-02-16T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-16T00:00:00+00:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Link collection: 1">
+<meta name=twitter:description content="Mateusz Efficiently Generating a Number in a Range You never thought about your random number generator. It just worked and you never noticed it to be off - except maybe for it&rsquo;s slow performance. Meanwhile this posts proves that there are people that are thinking about this like it&rsquo;s the basis of computing. Going over every little detail from correctness (!) and speed, and still one upping each-other on their implementation.">
+<link href=https://net-enjoyers.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet>
+<link rel=stylesheet type=text/css media=screen href=https://net-enjoyers.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css>
+</head>
+<body>
+<div class=content><header>
+<div class=main>
+<a href=https://net-enjoyers.github.io/>A link collection by Net-Enjoyers</a>
+</div>
+<nav>
+</nav>
+</header>
+<main>
+<article>
+<div class=title>
+<h1 class=title>Link collection: 1</h1>
+<div class=meta>Posted on Feb 16, 2022</div>
+</div>
+<section class=body>
+<h1 id=mateusz>Mateusz</h1>
+<h2 id=efficiently-generating-a-number-in-a-rangehttpswwwpcg-randomorgpostsbounded-randshtml><a href=https://www.pcg-random.org/posts/bounded-rands.html>Efficiently Generating a Number in a Range</a></h2>
+<p>You never thought about your random number generator.
+It <em>just worked</em> and you never noticed it to be off - except maybe for it&rsquo;s slow performance.
+Meanwhile this posts proves that there are people that are thinking about this like it&rsquo;s the basis of computing.
+Going over every little detail from correctness (!) and speed, and still one upping each-other on their implementation.
+The absolute madness to actually observe that doing the fast and simple&mldr;</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> random_var <span style=color:#f92672>=</span> rand() <span style=color:#f92672>%</span> range;
+</code></pre></div><p>&mldr;is biased is beyond me, but it&rsquo;s so obviously wrong, I&rsquo;m embarrassed not noticing it earlier.
+Overall a good read and some easy algorithms to maybe take with you on an embedded journey.</p>
+<h2 id=performance-speed-limitshttpstravisdownsgithubioblog20190611speed-limitshtml><a href=https://travisdowns.github.io/blog/2019/06/11/speed-limits.html>Performance Speed Limits</a></h2>
+<p>More of a source of knowledge rather than a blog post to read but interesting nonetheless.
+Going from the simplest statement.</p>
+<blockquote>
+<p>CPU can execute only a maximum number of operations per cycle</p>
+</blockquote>
+<p>And ending up in memory bandwidth, data dependency chains, reorder buffer size and imperfections in the physical scheduler of the CPU.
+Reading even a third shows sheer complexity and at the same time explains why you can&rsquo;t no longer say that some CPU is faster in every way compared to another.
+Seeing that even the CPUs that we assume are &ldquo;toys&rdquo; are actually faster than supercomputers were in the 1995 is staggering.
+That might me taken as an achievement but it&rsquo;s actually a sad thing that computers that simulated nuclear reactions in 1995 can now fit in your pocket and still take a couple of seconds to send more then a kilobyte of text.</p>
+<h2 id=gpshttpsciechanowskigps><a href=https://ciechanow.ski/gps/>GPS</a></h2>
+<p>Do you know where on the planet earth you&rsquo;re situated at this given moment?
+Probably yes&mldr;
+In the odd case that the answer is no, you can pin point your location using GPS.
+But how does it even work, you just enabled something and you can in real-time monitor street turns as they pass you, but <em>how</em>?
+This blog post - although long - gives the best explanation through trying to develop such a system from the ground up.
+The interactivity provided is stunning and I dread every time I look at it because it had to take a long time to make.
+I adore how some thing in this are posing a big problem - like clock sync - but in the end it just all nicely collapses into a plain and simple thing.
+It&rsquo;s like this wants to be created, like a math equation that is just waiting to be discovered.</p>
+</section>
+<div class=post-tags>
+</div>
+</article>
+</main>
+<footer>
+<hr>⚡️
+2022 <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a>
+</footer>
+</div>
+</body>
+</html>
