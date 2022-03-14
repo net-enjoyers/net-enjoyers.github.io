@@ -1,0 +1,56 @@
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Link collection: 3 - A link collection by Net-Enjoyers</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Mateusz Wide-band WebSDR Electromagnetic radiation is a spectrum so incredibly attached to today&rsquo;s humans it&rsquo;s hard to imagine life without it. From radio, WiFi, Bluetooth, 4G/5G, TV, Roentgen pictures and to the most important - visible light. It&rsquo;s all around us, thanks to it, you are able to read these words. But such a high number of these is invisible to us it might actually not exist. How do so many of these great technologies work, communicating (at the speed of light!"><meta property="og:image" content><meta property="og:title" content="Link collection: 3"><meta property="og:description" content="Mateusz Wide-band WebSDR Electromagnetic radiation is a spectrum so incredibly attached to today&rsquo;s humans it&rsquo;s hard to imagine life without it. From radio, WiFi, Bluetooth, 4G/5G, TV, Roentgen pictures and to the most important - visible light. It&rsquo;s all around us, thanks to it, you are able to read these words. But such a high number of these is invisible to us it might actually not exist. How do so many of these great technologies work, communicating (at the speed of light!"><meta property="og:type" content="article"><meta property="og:url" content="https://net-enjoyers.github.io/posts/third/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-03-14T00:00:00+00:00"><meta property="article:modified_time" content="2022-03-14T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Link collection: 3"><meta name=twitter:description content="Mateusz Wide-band WebSDR Electromagnetic radiation is a spectrum so incredibly attached to today&rsquo;s humans it&rsquo;s hard to imagine life without it. From radio, WiFi, Bluetooth, 4G/5G, TV, Roentgen pictures and to the most important - visible light. It&rsquo;s all around us, thanks to it, you are able to read these words. But such a high number of these is invisible to us it might actually not exist. How do so many of these great technologies work, communicating (at the speed of light!"><link href=https://net-enjoyers.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://net-enjoyers.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css></head><body><div class=content><header><div class=main><a href=https://net-enjoyers.github.io/>A link collection by Net-Enjoyers</a></div><nav></nav></header><main><article><div class=title><h1 class=title>Link collection: 3</h1><div class=meta>Posted on Mar 14, 2022</div></div><section class=body><h1 id=mateusz>Mateusz</h1><h2 id=wide-band-websdrhttpwebsdrewiutwentenl8901><a href=http://websdr.ewi.utwente.nl:8901/>Wide-band WebSDR</a></h2><p>Electromagnetic radiation is a spectrum so incredibly attached to today&rsquo;s humans it&rsquo;s hard to imagine life without it.
+From radio, WiFi, Bluetooth, 4G/5G, TV, Roentgen pictures and to the most important - visible light.
+It&rsquo;s all around us, thanks to it, you are able to read these words.
+But such a high number of these is invisible to us it might actually not exist.
+How do so many of these great technologies work, communicating (at the speed of light!) between each other with ease?</p><p>Answer: it&rsquo;s waves!
+You thought you can escape them, I thought I can escape them.
+The wave equation, nightmare of my physics course, I dread even thinking about it.
+Sadly the truth is that, it&rsquo;s all a wave.
+Thanks to Joseph Fourier we know that any signal is just a collection of different sinusoids.
+Skipping over some bits, using that knowledge we can transmit our desired sinusoid and still be able to pull out just the one we want at the receiver.
+The medium that will allow all of this to propagate is the aforementioned electromagnetic radiation.
+Anybody with a flashlight is creating a field of it around them.
+It&rsquo;s so easy to create and receive it might as well be the reason we are at this current technological level.</p><p>Well, if we have a high level of technology, and we heavily used radio to get to it shouldn&rsquo;t we combine the two?
+As always if you think that you had an original, once in a lifetime thought, someone already had it years before.
+Same here, the field of <strong>Software Defined Radio</strong> (SDR) is spreading it&rsquo;s wings and it&rsquo;s doing it fast.
+For 20-40$ you can get a USB dongle that will allow you to receive any signal starting from 24MHz and going up to 1.7GHz with a bandwidth of around 3MHz.
+If you think about it, it&rsquo;s insane, you can without problem receive multiple AM radio stations <strong>at once</strong>.
+If you do not want to pony up the cash to see if it even is for you, try having some fun with this website.
+You have unlimited access to 0Hz-30MHz which allows you to listen to radio stations, military requests and some hobbists that are licensed.
+I highly recommned checking out the chat page, where people share the exact frequency and modulation scheme of some interesting broadcasts.</p><h2 id=a-history-of-nvidia-stream-multiprocessorhttpsfabiensanglardnetcudaindexhtml><a href=https://fabiensanglard.net/cuda/index.html>A history of NVidia Stream Multiprocessor</a></h2><p>Things should be as simple as possible, but not simpler.
+Is a nice way to describe what NVidia had thought to them selves after unleashing Streaming Multiprocessor (SM) model into the world.
+Going back, think how would you create a graphics core that is responsible for a tightly defined number of things and needs to be fast.
+First things first, single purpose is <strong>always</strong> faster over generic.
+Well, if you know that you&rsquo;re going to be the bottleneck in any system then just create single purpose hardware sections that are going to be responsible for different stages of 3D graphics.
+Create an ASIC for triangulation and pixel filling with all the modes you need to support (remember that OpenGL did not support shaders until version 3).
+Sweet!
+Now you all need to do every two years is increase VRAM size and introduce more ASICs into the GPU.</p><p>Well, it&rsquo;s not so simple.
+You can&rsquo;t just dream in your imagined land and say that your performance benchmarks rip and tear when the customers and seeing something completely different.
+Not all 3D scenes are the same, some are going to require mostly triangulation while needing only a simple pixel fill, while others are going to be completely opposite to that.
+Now game companies have to play into your hand and pray for you to keep the same ratio of performance between triangulation and pixel shaders in newer editions of cards to extract 100% from the hardware.</p><p>What if you ditch the ASICs and all of the ratios between different stages?
+Just create processors that are generic enough to be competent at all stages and you have no problem with ratios.
+You are always going to use 100% of your card, because cores that are not doing triangulation can become pixel filling machines.
+That is what NVIDIA has done and what is so masterfully described and visualized in this blog post.
+I don&rsquo;t want to introduce confusion so I&rsquo;m going to recommend you read it now if you&rsquo;re interested.</p><h2 id=apple-m1-ultrahttpswwwapplecomnewsroom202203apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer><a href=https://www.apple.com/newsroom/2022/03/apple-unveils-m1-ultra-the-worlds-most-powerful-chip-for-a-personal-computer/>Apple M1 Ultra</a></h2><p>Apple is on a mission to pull the pants of all modern x86 processors.
+Their new processor M1 Ultra is just a page from AMD&rsquo;s book and they glued their best processor effectively creating a <a href=https://en.wikipedia.org/wiki/Radeon_Rx_200_series#Radeon_R9_295X2>R9 295x2</a> of CPUs.
+The claims are out of this world and it makes me so happy and so terrified at the same time it&rsquo;s making my head whirl.</p><p>Why happy?
+We are stuck.
+Stuck on an ISA that was created on a whim and thrust into the stratosphere as the de-facto standard by IBM.
+I like x86 but is it Stockholm Syndrome?
+Maybe&mldr;
+The fact that ARM is reaching performance levels so high is so encouraging because it means there is a different way to this CPU business.
+Also, another player on the duopoly market that we had for basically 20 years is fantastic.</p><p>Why then terrified?
+It&rsquo;s Apple.
+I and you know they have some skeletons in their closet.
+They are fiercely anti-consumer and try to integrate everything into oblivion.
+When my AMD/Intel CPU breaks, I&rsquo;ll just get a new one.
+In the case of Apple silicon CPUs it&rsquo;s a high speed ticket to &ldquo;Purchase a new machine&rdquo;.
+RAM is not upgradeable, <a href=https://nitter.net/marcan42/status/1494213855387734019#m>SSDs are questionable</a> and the overall hackability of this platform is the lowest of them all.</p><p>All and all, it&rsquo;s an achievement that I want to follow.
+I&rsquo;m eagerly waiting to see what kind of performance they managed to create.
+Probably 2x is maximum that it&rsquo;s possible to achieve in the baseline from MacBook Pro&rsquo;s.
+And even that is a stretch because the connector they use is a bottleneck.
+I know that they say that it&rsquo;s amazing - well because they have to, it&rsquo;s their PR talk.
+History of AMD showed us that if you can you want to get rid of the high speed bus between the cores as fast as possible.
+I want to get rid of this stale market even faster and experiment with all the new and creative uses of silicon.
+Let the Moore&rsquo;s law never die.</p></section><div class=post-tags></div></article></main><footer><hr>⚡️
+2022 <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer></div></body></html>
