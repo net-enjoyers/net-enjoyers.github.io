@@ -85,3 +85,36 @@ I know that they say that it's amazing - well because they have to, it's their P
 History of AMD showed us that if you can you want to get rid of the high speed bus between the cores as fast as possible.
 I want to get rid of this stale market even faster and experiment with all the new and creative uses of silicon.
 Let the Moore's law never die.
+
+# Antoni
+
+## [Who stole my focus?](https://www.vox.com/vox-conversations-podcast/2022/2/8/22910773/vox-conversations-johann-hari-stolen-focus?ref=refind)
+
+Why is that we all know the current problems and have the ideas to solve them but actually nobody is doing anything. And when someone is doing so, getting people onboard is the biggest struggle? Why are we worrying so much, discussing it but when it comes to execution the initiatives phase out because of lack of interest?
+
+Take for example buying local products. Why small companies have such a hard life when they offer a)better quality b)lower prices c)more environment friendly business model? Why always the answer is "they don't market themselves, people don't recognize them"? Why people buy worse products at higher prices just because they are being sold under "The Brand X" logo.
+And when trying to solve this problem we are making marketing campaigns "Buy Local Products". Why nowadays everything has to be sold to us, gave in front of our eyes, whispered in the ear? Why we cannot just be informed, reason about the problem and take actionable steps?
+
+I have a pretty bold thesis **that the problem is not with ourselves**. Current digital world has been constructed in such a way to make us unable to take action. We are only being fed with **illusion of action called click**. 
+
+I know it sounds evil, but actually nobody (probably) is being evil. Only the system is broken. It promotes exploit of other human being. It starts a loop where consuming more distracting content makes content more distracting. But what if at some point everyone become distracted. And what if it happened already? How could we know?
+
+> We need to just say that a business model premised upon discovering the weaknesses in your attention in order to hack it and sell it to the highest bidder is fundamentally immoral and inhuman like leaded paint, and we will not allow it.
+
+> It’s like we’re having itching powder dumped on us all day and then we’re being told, “You know what, buddy, you might want to learn how to meditate, then you wouldn’t scratch so much.” We need to get out of this psychology and remind ourselves that we’re not medieval peasants begging at the court of King Zuckerberg for a few little crumbs from his table. 
+
+**Ban the “surveillance capitalism” now.**
+
+## [What am I willing to struggle for?](https://www.youtube.com/watch?v=jrVvwnh9eKA)
+
+When you become great at something what you remember about the process? For me it is those little moments during which I had thoughts to give up but decided otherwise and **keep on struggling**.
+
+I have been having such thoughts about life lately, that it is composed mostly out of struggle. Living a proactive life is just a decision whether you want to struggle for something. And a very important idea is that our **struggle-power** is limited, so we have to choose our values wisely.
+
+But why to define own life in such a negative manner? Have I forgotten about positive psychology? No, I have just redefined my world perspective. Instead of looking at events in the manner of good and bad, positive or negative, I look at action and inaction. Something happened or did not happen. And that is our biggest constraint, we are not physically able to make everything happen. We have to choose. And the good choice is indeed the hidden gem of it all. If we decided to do something which is inline with our goals we will unleash a lot of our **struggle-power**. 
+
+Does **struggle-power** makes us constantly happy? NO.<br>
+Happiness is just a part of the whole process, not the end goal. As it is said in a famous Polish song "W życiu piękne są tylko chwile".
+
+So what differentiate accomplishments from failures? **Struggle Power** (and a bit of luck ;-D)
+

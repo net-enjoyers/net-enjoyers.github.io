@@ -137,4 +137,4 @@ I am very often voiceless, scared to say something that I feel should have been 
 > **Fail fast, fail forward is heading us into the blind alley.** *Piano, piano, chi va piano, va sano e lontano*  
 
 
-## [Who stole my focus?](https://www.vox.com/vox-conversations-podcast/2022/2/8/22910773/vox-conversations-johann-hari-stolen-focus?ref=refind)
+
