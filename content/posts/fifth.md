@@ -55,3 +55,25 @@ It's sad to see that companies these days are just PR and nothing else.
 China is going to overtake the world - for me it already has.
 People are not interested in making stuff, just buying.
 Don't mindlessly consume, create something, anything!
+
+# Antoni
+
+## [Nationalism](https://www.orwellfoundation.com/the-orwell-foundation/orwell/essays-and-other-works/notes-on-nationalism/)
+
+> Moreover, although endlessly brooding on power, victory, defeat, revenge, the nationalist is often somewhat uninterested in what happens in the real world. What he wants is to feel that his own unit is getting the better of some other unit, and he can more easily do this by scoring off an adversary than by examining the facts to see whether they support him.
+
+
+>If one harbours anywhere in one’s mind a nationalistic loyalty or hatred, certain facts, although in a sense known to be true, are inadmissible. Here are just a few examples. I list below five types of nationalist, and against each I append a fact which it is impossible for that type of nationalist to accept, even in his secret thoughts:
+
+~ *All of these facts are grossly obvious if one’s emotions do not happen to be involved: but to the kind of person named in each case they are also intolerable, and so they have to be denied, and false theories constructed upon their denial.*
+
+what are my weak points of thinking, where my emotion lead to me to blunder
+
+> One has to belong to the intelligentsia to believe things like that: no ordinary man could be such a fool. 
+
+> But you can at least recognize that you have them, and prevent them from contaminating your mental processes.
+
+## [Other group](https://www.spsp.org/news-center/blog/thurmer-opposing-groups)
+
+> t is well established that group members are usually tolerant of criticism by a fellow group member but react defensively when a member of a different group voices exactly the same criticism. Though we could find many studies supporting this conclusion, these studies merely asked participants about their thoughts and feelings.
+
