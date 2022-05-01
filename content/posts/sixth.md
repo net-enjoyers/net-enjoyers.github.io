@@ -61,3 +61,57 @@ to
 >Chcę spróbować. Jeżeli odpowiednio się skupię to rozwiążę ten problem. A jeżeli nie to nie był on dla mnie.
 
 **Life is complicatedly simple**, the threshold for mistakes is very big. Of course there are some things that I cannot afford to break but at the same time I should not be paralyzed by them and always prioritize it. Maybe it is more of a pool than ocean. If you stick to some rules you can play around and never drown.
+
+# Mateusz
+
+## [Keyboard Firmware Reverse Engineering](https://github.com/m-radomski/re-masterkeys)
+
+Thing is a milestone in the net-enjoyers catalogue because I'm referencing my own work this time.
+Namely for the last month I was reverse engineering my own keyboard for fun.
+I didn't really know where it would take me but it was interesting in the moment and I really felt like I was doing something that now body else has really done.
+Saying that I also want to stress the importance of a community.
+Because the most valuable thing I learned is: post your work to others if you can.
+If you spent 2 weeks doing something that was just "for your own interest", it would only take you an hour to share that with the wider world.
+And someone might actually benefit from you and be able to stand on your shoulders.
+As you know scientists don't each start out by inventing the wheel and proving the Pythagorean Theorem.
+They ["stand on the shoulders of giants"](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants) and are able to achieve unthinkable things through teamwork where the other side of the team does not even know that they are helping.
+
+Besides that it's always interesting to swim in the ocean of knowledge where google results are sparse and most of the things are on you to figure out.
+The conclusion for me from this project is that you should always purse the thing that interests you, not in a month, or when you are going to have more free time, do it now. 
+Don't expect something nice to always come from this but you are never going to regret pulling on the thread of curiousness. 
+And as you might expect, share anything you found and you think might help others or might just be a nice documentation on what you did that day.
+
+## [Programming Hand Tools](https://www.youtube.com/watch?v=uk3A41U0iO4)
+
+You know these talks that you sit with a tea to watch and it just flies by and for the rest of the day you keep thinking about it?
+I love them!
+The problem is that they are rare and I also believe that different talks are going to evoke that feeling for different people. 
+If you like anything technical or keyboard related I strongly recommend this talk.
+It's quite brisk and flows very nicely.
+And the opening quote sticks with you because you know it's true. 
+
+The advent of 3D printers and opening your imagination wide open is truly something to behold of.
+Creativity for me is the result of watching what others do and giving it your own unique spin. 
+Don't be afraid that others are doing quantum leaps in reasoning by inventing something when in reality all the necessary thing were there.
+All that had to be done is to connect them and that is sometimes easier than it might seem.
+
+## [The best engineering interview question I’ve ever gotten](https://quuxplusone.github.io/blog/2022/01/06/memcached-interview/)
+
+Have you had this talk?
+The technical interview talk?
+You have to read code examples from a PDF and tell what is wrong with them.
+Or you have to implement something from the book of Algorithms And Data Structures.
+It feels so wrong because it's so out of place.
+Judging if someone is fit for a determined job position is hard but in the IT space it's just shooting in the dark.
+Coming of as know-it-all here is very hard not to do, but I'll accept the fact that I'll do that regardless and just move on.
+HR people are not IT people and don't know what is considered knowledge for a person working in that field.
+I lump everything into IT but I mostly mean software developer jobs.
+
+Say something about yourself that isn't your leadership, about how you deal with stress or "always meet deadlines".
+Tell me about the hardest problem that you have solved, describe it.
+It's easy to see if someone understands what they are talking about here.
+Where if you ask someone how to invert a binary tree they'll just rattle of something from a book and don't understand a word from that.
+Don't say, **SHOW** me!
+I think that if I ever was in that interview that the author of the original post describes I'd be more ecstatic about that question then if I got the job or not.
+It's a good exercise to do it yourself, set the timer and get cracking.
+See how well you'd in that situation.
