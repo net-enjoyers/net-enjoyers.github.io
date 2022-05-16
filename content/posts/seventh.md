@@ -1,0 +1,65 @@
+---
+title: "Link collection: 7 (Switch around)"
+date: 2022-05-14
+draft: false
+---
+
+# Special post
+
+This post we decide to experiment with an idea.
+We would come up with something that diverges from the beaten path and see how it turns out.
+The first idea that Antoni came up with is switching our posts around.
+In short: I choose two blog posts and send them to Antoni and he writes about them and the other way around.
+
+# Mateusz
+
+## [It's Later Than You Think](https://sahilbloom.substack.com/p/its-later-than-you-think?ref=refind&s=r)
+
+The realization that life is brisk is sudden and crushing.
+In the last 3 years of my life I've moved four times by now, I'm finishing my studies, started my first real job, went and still am going through a global pandemic and spent many wonderful days with my partner.
+And although I can enumerate so many different things that happened in those three years in my mind three years between the age of 15-18 was so much longer.
+Why is it so that my weeks are getting shorter and shorter.
+That I look at the clock and already it's afternoon even though my day did not contain any wonderful and new things happening.
+Is that what getting used to living looks like?
+
+All this chaos of deadlines, and meetings, and appointments that you have made.
+It all spirals so fast and you've grown accustom to it.
+You think you have so much time left, and you may, by remember about the people around you.
+Life is not egoistic, it did not start out of an action of a unit.
+It flourishes because of teamwork, because things in groups are much stronger.
+For you to be stronger you need to remember that you are in a group.
+And the group closest to you is your family.
+If your mother or father died today, think about the things you wished you've said to them.
+Pick up your fancy smartphone that you work so tirelessly for, call them and say everything that came to your mind.
+
+Remember this quote from Pink Floyd, because if you will it will make you cry whenever you hear _Time_ come on the radio.
+And because of this it will help you reevaluate how and what for you're spending your time.
+
+> Ticking away the moments that make up a dull day  
+> Fritter and waste the hours in an offhand way  
+> Kicking around on a piece of ground in your hometown  
+> Waiting for someone or something to show you the way  
+> Tired of lying in the sunshine, staying home to watch the rain  
+> You are young and life is long and there is time to kill today  
+> And then one day you find ten years have got behind you  
+> No one told you when to run, you missed the starting gun  
+
+## [The Present Bias](https://blog.trello.com/the-present-bias-why-you-keep-sabotaging-your-future-and-how-to-stop?ref=refind)
+
+To be honest this post did not hit me that hard as the one before.
+For some reason I cannot shake the feeling that it's just an advert for Trello and productivity freaks.
+But to be fair I'll try to say a few words that will actually apply to the context of this post.
+
+It's wildly known that humans will often take a smaller reward in the present over a bigger reward in the future.
+We are hardwired to survive in the present, we cannot really be sure if we are going to be alive in the future in which we could cash in this greater reward.
+It actually comes out as a investment where you could get $10 here now, or invest them and _maybe_ get $20 dollars in the future.
+For some reason my non-ape part of the brain can make up a reason for it.
+Less stress.
+It's my less stressing to take something now rather then pick up something greater in the future.
+
+I'd also like to point out the ironic part of this blog post.
+Where the author at the beginning says that not eating out for $50 can save up to even $9000 with some investment.
+But later on says that paying for a subscription of a box diet is something you might think about if you want to eat healthy.
+Remember that we are lazy and we are going to do what is the easiest.
+If on your tabletop are cookies, you are going to eat cookies as a quick snack.
+On the other hand if you put ready-to-eat carrots in an accessible spot you soon will find yourself munching on them just as if they were cookies. 
