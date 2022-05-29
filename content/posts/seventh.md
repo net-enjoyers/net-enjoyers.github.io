@@ -77,13 +77,13 @@ Secondly I realized that I was wearing something on my wrists for few years with
 In first paragraph where I wrote about automatic winding, do you know how it works? I will tell you: there is a weight which can rotate freely in both directions, to it is attached gear which moves other gear which moves other gears, but only in one direction, thanks to pair of cleverly shaped gears. Easy right? No. I will show you:
 
 ### There is a weight that can move freely in both directions
-![](./../../static/img/antooni/07/weight.png)
+![](./../static/img/antooni/07/weight.png)
 
 ### which moves gears but only in one direction
-![](./../../static/img/antooni/07/gears.png)
+![](./../static/img/antooni/07/gears.png)
 
 ### thanks to a pair of cleverly shaped gears
-![](../../static/img/antooni/07/two-build.png)
+![](./../static/img/antooni/07/two-build.png)
 
 Easy right? No. Now visit the website and see the animations. 
 
