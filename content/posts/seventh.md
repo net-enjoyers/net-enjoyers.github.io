@@ -63,3 +63,53 @@ But later on says that paying for a subscription of a box diet is something you 
 Remember that we are lazy and we are going to do what is the easiest.
 If on your tabletop are cookies, you are going to eat cookies as a quick snack.
 On the other hand if you put ready-to-eat carrots in an accessible spot you soon will find yourself munching on them just as if they were cookies. 
+
+# Antoni 
+
+## [Mechanical Watch](https://ciechanow.ski/mechanical-watch/)
+
+I have two main takeaways from this article + one meta-takeaway
+
+First is the realization of how amazing is to be alive these days. What science and engineering has created is another level on top of natural world. Just by using the same physical forces you are creating whole different systems. It almost can feel like cheating the rules. Take for example automatic winding, the weight is swinging in both directions, but gears are rotating only in one, everything thanks to clever usage of shapes and connections. Astonishing.
+
+Secondly I realized that I was wearing something on my wrists for few years without understanding of how it works. I knew that mechanical watch was automatically winding when I was moving my arm, but nothing more. Maybe also that it is relatively fragile so I should avoid wearing it during workouts or parties. All it takes to use something is a completely different animal than what it takes to build something. Two sentences before I went to my drawer, took my watch, swing it few times and put it on my wrist, feeling worth my time.
+
+In first paragraph where I wrote about automatic winding, do you know how it works? I will tell you: there is a weight which can rotate freely in both directions, to it is attached gear which moves other gear which moves other gears, but only in one direction, thanks to pair of cleverly shaped gears. Easy right? No. I will show you:
+
+### There is a weight that can move freely in both directions
+![](./../../static/img/antooni/07/weight.png)
+
+### which moves gears but only in one direction
+![](./../../static/img/antooni/07/gears.png)
+
+### thanks to a pair of cleverly shaped gears
+![](../../static/img/antooni/07/two-build.png)
+
+Easy right? No. Now visit the website and see the animations. 
+
+That is my meta takeaway, the form, the visual animation, it helped me understand it. Author took the task very seriously and made significant effort to make it easily accessible cognitively for me. I want to convey my knowledge to others like this, so they can feel taken care of and spend time focusing on the idea, not syncing metadata.
+
+
+## [Online health information](https://blog.tjcx.me/p/google-terrible-health-information?s=r)
+
+I have this weird feeling that we are all wrong about the current internet. We assume that we are all connected and so come complaints about inability to obtain information. But I have a hypothesis that we are having one wrong assumption, that communication is an opt-out activity. That's why someone connected seems to us as someone communicating. But as it turns out, communication is an opt-in activity and involves mental processing from both sides. Unfortunately our internet currently is more of a digital newspaper than public forum.
+
+Imagine this as a big room, we are all standing there, but rarely anyone looks to the side and talks to the neighbor. Instead, we are having our heads up watching something in the sky (feed, search result, blog post). For me the most interesting part is always the comments section, where ideas and opinions cross, two thought processes can challenge each other. That's where the communication happens. 
+
+But I think we cannot require internet to be the place which physical space is not. Real communication, education, development happens in small groups, with every participant adding his cognitive energy to the mix, not taking it. The best groups are so niche that it is even hard to find them online, you most often can only discover it by being invited by other member. They are small and for someone not accustomed to it can feel dead because they have only 5 likes. 
+
+And that's the idea I want to grasp, we are indeed great at building small aligned groups and incorporating others. You can feel during conversation that someone will fit, that he will be able to grasp cognitively the ideas and have the urge to focus and understand different point of view. HOW TO DO IT ONLINE? 
+
+I have an idea: maybe keep the groups small. Why do we even need global facebook at the first place. The ones we are concerned are just our closest social circle. So no mass social media. You want to know what happens on the world? Sure, there are plenty of information sources. You want to meet new people, sure there are lots of services. You want to do something, make it opt-in, require action not reaction.
+
+At this point of view social media platforms are just machines to make people numb and passive. And that is just what it is, create illusion of an action, of an information. Where something meta seems real. 
+
+And this point of view leads us to a very interesting takeaway, social media are filters. Most of the people will fall in this trap, but, there are some that find their way to escape. That was very well described by the author, he decided to dig deeper and found the answer. At the end he went to the different dentist which also dug deeper and understood the problem. And the he laughed.
+
+Needless was his effort you would say. At first sight yes, but when you look closer you can notice very subtle but extremely important attitude. To stop, to think, to spend few extra seconds making sanity checks and when seeing some inconsistency have the courage to challenge it and search for the truth.
+
+We will never create a medium that gives us answers, because that is simply impossible to create. 
+We are good at using tools and should treat internet as such.
+Best tool ever created.
+Net enjoyer.
+I am.
