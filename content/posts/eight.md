@@ -46,3 +46,23 @@ The famous question of: What if Linus Torvalds falls under a bus?
 These projects need to evolve which is sad because I think we need a revolution.
 [musl](https://musl.libc.org/) shows that you can do it the correct way, so when are we going to pay of this gigantic technical debt?
 I myself believe that never from which you can only surmise that we as individuals need to start creating/relying on things that are revolutions upon the beaten path.
+
+# Antoni 
+
+
+
+## [Norawy Fjord Cruise](https://wypiszwymalujpodroz.pl/praktyczny-poradnik/europa/norwegia/rejs-po-fiordach/)
+
+I want to go to Norway, I have been saving money for half a year to go on a vacation somewhere, my first idea was London, but actually visiting Keukenhof in Amsterdam changed my mind, natural wonders are just the best thing you can see, that should be your top priority, this feeling is unprecedneted, uncompareable, your body is fucking loving it, i want this and will do it
+
+
+This blogpost was superhelpful and allowed me to come from dream to true, i was full of doubts, thought it is hard, but just story of two students that went in a reasonalbe amount of money compelled to me
+
+## [103 Bits of Advice I Wish I Had Known](https://kk.org/thetechnium/103-bits-of-advice-i-wish-i-had-known/)
+
+So much knwoledge in one place, that is sometimes even more valuable than knwoledge itself. We evaulate people because they have knowledge, experts, but at the end of the day they are knwoledge stores that gathered so many data, point of views, made mistakes, got practice, created something. All of this leads to an unprecedented thought process that allows them to grasp the problem and it becomes first order citizen in their mind, where thay can almost physicallly in their mind interact with the problem. I wonder what is the shape of thought, I sometimes can feel my thoughts.
+
+## [The Mindset Gap](https://fs.blog/brain-food/may-1-2022/)
+
+We should all be thought mindset, everything I truly learned is because I got certain mindset, you get this from entering groups that are having traits you want to have or spending time reading, but I would say groups are way stronger
+I want to teach others mindset, really
