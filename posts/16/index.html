@@ -1,0 +1,74 @@
+<!doctype html><html><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><title>Link collection: 16 - A link collection by Net-Enjoyers</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Mateusz JITs, how do they work? If you search for &ldquo;How do JITs work?&rdquo;, you&rsquo;ll get the same information presented with different CSS. What if you understand that JITs take source code or bytecode and at runtime compile it to machine code but still have no clue how is that achieved? If you think about it it&rsquo;s actually somewhat of an interesting problem. There appears to be no easy solution to running arbitrary code that &ldquo;appeared&rdquo; during the programs lifetime."><meta property="og:image" content><meta property="og:title" content="Link collection: 16"><meta property="og:description" content="Mateusz JITs, how do they work? If you search for &ldquo;How do JITs work?&rdquo;, you&rsquo;ll get the same information presented with different CSS. What if you understand that JITs take source code or bytecode and at runtime compile it to machine code but still have no clue how is that achieved? If you think about it it&rsquo;s actually somewhat of an interesting problem. There appears to be no easy solution to running arbitrary code that &ldquo;appeared&rdquo; during the programs lifetime."><meta property="og:type" content="article"><meta property="og:url" content="https://net-enjoyers.github.io/posts/16/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-11-11T00:00:00+00:00"><meta property="article:modified_time" content="2022-11-11T00:00:00+00:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Link collection: 16"><meta name=twitter:description content="Mateusz JITs, how do they work? If you search for &ldquo;How do JITs work?&rdquo;, you&rsquo;ll get the same information presented with different CSS. What if you understand that JITs take source code or bytecode and at runtime compile it to machine code but still have no clue how is that achieved? If you think about it it&rsquo;s actually somewhat of an interesting problem. There appears to be no easy solution to running arbitrary code that &ldquo;appeared&rdquo; during the programs lifetime."><link href=https://net-enjoyers.github.io/css/fonts.b685ac6f654695232de7b82a9143a46f9e049c8e3af3a21d9737b01f4be211d1.css rel=stylesheet><link rel=stylesheet type=text/css media=screen href=https://net-enjoyers.github.io/css/main.2f9b5946627215dc1ae7fa5f82bfc9cfcab000329136befeea5733f21e77d68f.css></head><body><div class=content><header><div class=main><a href=https://net-enjoyers.github.io/>A link collection by Net-Enjoyers</a></div><nav></nav></header><main><article><div class=title><h1 class=title>Link collection: 16</h1><div class=meta>Posted on Nov 11, 2022</div></div><section class=body><h1 id=mateusz>Mateusz</h1><h2 id=jits-how-do-they-work>JITs, how do they work?</h2><p>If you search for &ldquo;How do JITs work?&rdquo;, you&rsquo;ll get the same information presented with different CSS.
+What if you understand that JITs take source code or bytecode and at runtime compile it to machine code but still have no clue how is that achieved?
+If you think about it it&rsquo;s actually somewhat of an interesting problem.
+There appears to be no easy solution to running arbitrary code that &ldquo;appeared&rdquo; during the programs lifetime.
+Do they create small .exe files that are running and returning result?
+It was so weird to me that I actually thought that this solution had some merit to itself.</p><p>The reason why this use-case seems so out of place is because it&rsquo;s very rare and at the same point guarded against.
+If the program you were running had it&rsquo;s code modified the results would be disastrous for security.
+Any program could just write into other processes memory where the code is stored and have them execute it.
+Stealing password would be so easy!
+But you know you can&rsquo;t write to the memory of other processes, that&rsquo;s what virtual memory is for.
+Okay, so I&rsquo;ll just write into my own processes memory the code I want to execute and somehow tell my program to execute those instructions.
+Right?
+Well, almost.
+You&rsquo;ll have to allocate memory and specifically mark this part of the memory as <em>executable</em>.
+Otherwise, the CPU will throw an exception the moment it tries to execute the first instruction.
+Now that we allocated memory that can be executed we somehow need to tell our program to <em>run</em> this piece of code.
+This point is the most trivial to achieve but might be hard to figure out if you&rsquo;ve never done something like this.
+Function pointers are our solution.
+It&rsquo;s nothing more than an address of the memory where the CPU should set it&rsquo;s instruction pointer to.
+The code you&rsquo;re compiling is stored in <code>.text</code> section in the ELF file.
+That data it&rsquo;s copied into memory that can be <em>executed and read</em> but not <em>written</em> since we want to protect our program from unwanted modifications.
+If you&rsquo;ve programmed in assembly this will make more sense, but if you&rsquo;ve only programmed sparsely in low-level languages then it&rsquo;ll take some time to understand.</p><p>We&rsquo;ll create a simple proof of concept that will run arbitrary bytes as code in C.
+Starting with the code we actually want to run</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>fused</span>(<span style=color:#66d9ef>int</span> a, <span style=color:#66d9ef>int</span> b, <span style=color:#66d9ef>int</span> c) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> a <span style=color:#f92672>*</span> b <span style=color:#f92672>+</span> c;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>We&rsquo;ll compile this into an object file to see what does this code map to assembly wise.
+Using <code>clang code.c -O2 -c && objdump -d code.o -M intel</code>
+For the code above we get the following output:</p><pre tabindex=0><code>Disassembly of section .text:
+
+0000000000000000 &lt;fused&gt;:
+   0:   0f af fe                imul   edi,esi
+   3:   8d 04 17                lea    eax,[rdi+rdx*1]
+   6:   c3                      ret
+</code></pre><p>The hex values after the colon are the actual bytes that make up the instruction.
+Now we need to load these values into allocated memory region, set an instruction pointer equal to the address of that memory region and call it.
+Starting with allocating memory that has the executable flag set.
+The easiest way to achieve that is using <code>mmap</code> on Linux.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>main</span>()
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>int</span> prot <span style=color:#f92672>=</span> PROT_EXEC <span style=color:#f92672>|</span> PROT_READ <span style=color:#f92672>|</span> PROT_WRITE; <span style=color:#75715e>// Make the memory writable, readable and executable
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>uint8_t</span> <span style=color:#f92672>*</span>memory <span style=color:#f92672>=</span> mmap(NULL,          <span style=color:#75715e>// Let the OS decide the base address
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           <span style=color:#ae81ff>4096</span>,          <span style=color:#75715e>// Allocate 4096 bytes; one page
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           prot,          <span style=color:#75715e>// See above
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           MAP_PRIVATE <span style=color:#f92672>|</span>  <span style=color:#75715e>// Do not share this memory with other processes
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           MAP_ANONYMOUS, <span style=color:#75715e>// Allocate memory instead of mapping a file
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           <span style=color:#ae81ff>0</span>,             <span style=color:#75715e>// No file descriptor
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>                           <span style=color:#ae81ff>0</span>);            <span style=color:#75715e>// No offset
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>}
+</span></span></code></pre></div><p>And now we are going to copy the values we got from <code>objdump</code> above.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// main continuation...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>uint8_t</span> <span style=color:#f92672>*</span>write_head <span style=color:#f92672>=</span> memory;
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>uint8_t</span> instr01[] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0x0f</span>, <span style=color:#ae81ff>0xaf</span>, <span style=color:#ae81ff>0xfe</span> }; <span style=color:#75715e>// imul   %esi,%edi
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>uint8_t</span> instr02[] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0x8d</span>, <span style=color:#ae81ff>0x04</span>, <span style=color:#ae81ff>0x17</span> }; <span style=color:#75715e>// lea    (%rdi,%rdx,1),%eax
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>uint8_t</span> instr03[] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0xc3</span>             }; <span style=color:#75715e>// retq
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    copy_instruction(<span style=color:#f92672>&amp;</span>write_head, instr01, ARRAY_LEN(instr01));
+</span></span><span style=display:flex><span>    copy_instruction(<span style=color:#f92672>&amp;</span>write_head, instr02, ARRAY_LEN(instr02));
+</span></span><span style=display:flex><span>    copy_instruction(<span style=color:#f92672>&amp;</span>write_head, instr03, ARRAY_LEN(instr03));
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>And we define these helpers</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#75715e>#define ARRAY_LEN(x) (sizeof(x)/sizeof(x[0]))
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>copy_instruction</span>(<span style=color:#66d9ef>uint8_t</span> <span style=color:#f92672>**</span>memory, <span style=color:#66d9ef>uint8_t</span> <span style=color:#f92672>*</span>instr, <span style=color:#66d9ef>uint32_t</span> count)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    memcpy(<span style=color:#f92672>*</span>memory, instr, count);
+</span></span><span style=display:flex><span>    <span style=color:#f92672>*</span>memory <span style=color:#f92672>=</span> (<span style=color:#f92672>*</span>memory) <span style=color:#f92672>+</span> count;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>All is left to do is setting the function pointer to the address we got from <code>mmap</code> and calling the function.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// main continuation...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>    <span style=color:#66d9ef>int</span> (<span style=color:#f92672>*</span>fused)(<span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span>) <span style=color:#f92672>=</span> (<span style=color:#66d9ef>int</span> (<span style=color:#f92672>*</span>)(<span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span>, <span style=color:#66d9ef>int</span>))memory;
+</span></span><span style=display:flex><span>    printf(<span style=color:#e6db74>&#34;func(11, 11, 2022) = %u</span><span style=color:#ae81ff>\n</span><span style=color:#e6db74>&#34;</span>, fused(<span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>2022</span>));
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>After compiling and running</p><pre tabindex=0><code>$ clang file.c -o prog &amp;&amp; ./prog
+func(11, 11, 2022) = 2143
+</code></pre><p>Go play and see what happens if you try and executing garbage data or write a simple JIT which compiles simple WASM.
+The full file is <a href=https://gist.github.com/mateuszradomski/23ef5481638faaef5f6863a436d500e1>here</a>.</p></section><div class=post-tags></div></article></main><footer><hr>⚡️
+2022 <a href=https://github.com/athul/archie>Archie Theme</a> | Built with <a href=https://gohugo.io>Hugo</a></footer></div></body></html>
